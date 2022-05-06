@@ -72,10 +72,6 @@ export default function LoginModal({ show, onHide, onSuccess }) {
             noValidate
             validated={validated}
           >
-            {/* <Form.Group className="mb-3" controlId="username">
-              <Form.Label>User Name</Form.Label>
-              <Form.Control type="text" placeholder="username" autoFocus />
-            </Form.Group> */}
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email Id</Form.Label>
               <Form.Control
