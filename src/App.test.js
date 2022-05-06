@@ -1,15 +1,24 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
 import App from './App';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme';
+import Header from './components/header/header';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
-      <App />
-    </Provider>
-  );
+// @ts-ignore
+Enzyme.configure({ adapter: new Adapter() });
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
-});
+describe("app component testing", () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<App/>);
+  });
+
+  test("renders header component without crashing", () =>{
+    const header = (<Header/>);
+    expect(wrapper.contains(header)).toEqual(true);
+  });
+
+  
+})
