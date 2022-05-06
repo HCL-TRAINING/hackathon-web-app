@@ -1,0 +1,10 @@
+.header-nav a {
+    color: hsla(0,0%,100%,.55);
+    text-decoration: none;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.header-nav a:hover {
+    color: hsla(0,0%,100%,.75);
+}

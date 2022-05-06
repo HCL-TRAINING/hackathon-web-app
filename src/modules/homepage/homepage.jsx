@@ -1,10 +1,10 @@
 import React from 'react'
-import Main from '../../components/main/main'
+import Login from '../login/login'
 
 export default function Homepage() {
   return (
     <>
-        <Main/>
+        <Login/>
     </>
   )
 }
