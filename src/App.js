@@ -8,8 +8,8 @@ import TestRoutes from './routes';
 function App() {
   return (
     <div className="App">
-      <Header/>
       <BrowserRouter basename='/test'>
+      <Header/>
         <TestRoutes/>
       </BrowserRouter>
     </div>
